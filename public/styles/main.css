@@ -1,0 +1,42 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.contenedor__main{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:  center;
+}
+
+.contenedor__principal{
+    width: 90%;
+    max-width: 600px;
+    height: 350px;
+    display: flex;
+    flex-direction: row;
+    border: 1px solid rgb(255, 0, 0);
+}
+
+.contenedor__principal__tareasNuevas, 
+.contenedor__principal__tareasEnProgreso,
+.contenedor__principal__tareasCompletadas{
+    width: 33.5%;
+    height: 350px;
+    border-radius: 5px;
+    border: 1px solid black;
+}
+
+.btn__nuevasTareas{
+    position: absolute;
+    top: 550px;
+    width: 150px;
+    height: 50px;
+    border-radius: 20px;
+    border: 1px solid red;
+    
+}

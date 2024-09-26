@@ -4,33 +4,27 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Primer proyecto TypeScript</title>
+    <link rel="stylesheet" href="/public/styles/main.css">
 </head>
 <body>
 
-    <header>Adam Samuel</header>
+    <header>
 
-    <main>
+    </header>
 
-        <section id="display">
+    <main class="contenedor__main">
+        <div class="contenedor__principal">
+            <div class="contenedor__principal__tareasNuevas">
 
-        </section>
-
-        <section id="editor">
-            <div id="input-container">
-                <input type="text" id="title">
-                <input type="number" id="cost">
-
-                <select name="" id="currency">
-                    <option value="MXM">MXN</option>
-                    <option value="USD">USD</option>
-                </select>
             </div>
-        </section>
+            <div class="contenedor__principal__tareasEnProgreso">
 
-        <section id="items">
+            </div>
+            <div class="contenedor__principal__tareasCompletadas">
 
-        </section>
-
+            </div>
+        </div>
+        <button class="btn__nuevasTareas">Nuevas Tareas</button>
     </main>
 
     <script src="js/expenses.js"></script>
