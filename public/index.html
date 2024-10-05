@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Primer proyecto TypeScript</title>
     <link rel="stylesheet" href="/public/styles/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
 </head>
 <body>
 
@@ -44,15 +46,30 @@
         <button class="btn__nuevasTareas" id="abrirModal">Nuevas Tareas</button>
     </main>
 
-    <!--Modal Nueva Tarea-->
+    <!--Modal Creacion de nueva Tarea-->
     <div id="modalTarea" class="modal">
         <div class="modal__contenido">
-            <span id="cerrarModalBoton" class="cerrar">&times</span>
-            <h2>Añadir nueva tarea</h2>
-            <input type="text" id="InputTarea" placeholder="Escribe tu tarea aqui.."/>
-            <button id="agregarTareaBoton">Añadir Tarea</button>
+            <div class="modal__contenido__separador">
+                <span id="cerrarModalBoton" class="cerrar">&times</span>
+                <button id="agregarTareaBoton" class="modal__agregar">Añadir Tarea</button>
+            </div>
+            <h2 class="modal__contenido__title">Añadir nueva tarea</h2>
+            <input type="text" id="InputTarea" class="modal__input" placeholder="Escribe tu tarea aqui.."/>
+            
+            <div class="modal__contenido__info">
+                <textarea  class="modal__contenido__detalles"></textarea>
+            </div>
         </div>
     </div>
+
+    <!--Abrir nueva tarea-->
+    <div class="tarea__ventana">
+
+        <h2 id="tarea__titulo"></h2>
+        <p></p>
+    </div>
+
+
 
     <script src="js/index.js"></script>
 </body>

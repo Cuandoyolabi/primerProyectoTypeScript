@@ -52,6 +52,8 @@ class Expenses {
         const items = this.getItems().filter(item => {
             return item.id != id;
         });
+        this.expenses.createFrom(items);
+        return true;
     }
     convertCurrency(item, currency) {
         switch (item.cost.currency) {

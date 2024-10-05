@@ -2,10 +2,11 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    background-color: rgb(189, 189, 189);
 }
 
 .contenedor__main{
-    width: 100vw;
+    width: 100%;
     height: 100vh;
     position: relative;
     display: flex;
@@ -69,17 +70,122 @@
 .modal{
     width: 300px;
     height: 300px;
-    border-radius: 10px;
     position: absolute;
     top: 20%;
     left: 40%;
     display: none;
+    border-radius: 10px;
     background-color: white;
     border: 3px solid black;
 }
-
-.listaTareas li{
-    border: 1px solid red;
+.modal__contenido{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+    border-radius: 10px;
 }
 
-/*  Elementos modal  /*
+.modal__contenido__title{
+    align-self: flex-start;
+    margin-left: 20px;
+    background-color: white;
+}
+.modal__input{
+    width: 90%;
+    height: 30px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    background-color: white;
+}
+.modal__contenido__separador{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 10px;
+    background-color: white;
+    margin-bottom: 20px;
+}
+
+.cerrar{
+    width: 40px;
+    height: 40px;
+    border-radius: 30px;
+    font-size: 30px;
+    margin-left: 10px;
+    cursor: pointer;
+    color: black;
+    align-self: flex-start;
+    background-color: white;
+}
+
+.modal__agregar{
+    width: 120px;
+    height: 30px;
+    border-radius: 10px;
+    align-self: flex-end;
+    cursor: pointer;
+    margin-right: 10px;
+
+}
+
+.modal__contenido__info{
+    background-color: white;
+}
+
+.modal__contenido__detalles{
+    width: 270px;
+    height: 50px;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    border-radius: 2px;
+    background-color: white;
+    resize: none;
+}
+
+/*  Elementos modal  */
+
+.modal__elemento{
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(189, 189, 189);
+    font-size: 20px;
+    border: 3px solid black;
+    border-radius: 10px;
+    list-style-type: none;
+    cursor: pointer;
+}
+
+.modal__elemento__content{
+    border: 3px solid red;
+}
+
+.modal__separador{
+    width: 40%;
+    height: 40px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.icon__task{
+    font-size: 17px;
+    cursor: pointer;
+}
+
+/* Elementos ventana tarea */
+
+.tarea__ventana{
+    width: 300px;
+    height: 300px;
+    border-radius: 20px;
+    background-color: white;
+    border: 2px solid red;
+
+}
