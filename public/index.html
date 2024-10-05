@@ -15,19 +15,45 @@
     <main class="contenedor__main">
         <div class="contenedor__principal">
             <div class="contenedor__principal__tareasNuevas">
+                <div class="tareasNuevas__titulo">
+                    <h2 class="titulo__texto">Tareas Nuevas</h2>
+                </div>
+                <div class="contenedor__tareas">
+                    <ul id="listaTareas">
 
+                    </ul>
+                </div>
             </div>
             <div class="contenedor__principal__tareasEnProgreso">
-
+                <div class="tareasEnProgreso__titulo">
+                    <h2 class="titulo__texto">Tareas en progreso</h2>
+                </div>
+                <div class="contenedor__tareas">
+                    
+                </div>
             </div>
             <div class="contenedor__principal__tareasCompletadas">
-
+                <div class="tareasCompletadas__titulo">
+                    <h2 class="titulo__texto">Tareas Completadas</h2>
+                </div>
+                <div class="contenedor__tareas">
+                    
+                </div>
             </div>
         </div>
-        <button class="btn__nuevasTareas">Nuevas Tareas</button>
+        <button class="btn__nuevasTareas" id="abrirModal">Nuevas Tareas</button>
     </main>
 
-    <script src="js/expenses.js"></script>
+    <!--Modal Nueva Tarea-->
+    <div id="modalTarea" class="modal">
+        <div class="modal__contenido">
+            <span id="cerrarModalBoton" class="cerrar">&times</span>
+            <h2>Añadir nueva tarea</h2>
+            <input type="text" id="InputTarea" placeholder="Escribe tu tarea aqui.."/>
+            <button id="agregarTareaBoton">Añadir Tarea</button>
+        </div>
+    </div>
+
     <script src="js/index.js"></script>
 </body>
 </html>
